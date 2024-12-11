@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Sreeni.OData.Transpiler.Core</Title>
+    <Authors>Sreenivasan</Authors>
+    <Company>Sreenivasan</Company>
+    <Description>Sreeni.OData.Transpiler.Core is a .Net based OData transpiler that translates OData queries to downstream data source queries like MySQL, Postgres, MS SQL, Azure Cosmos, etc.
+
+The objective is to enable seamless integration and query translation across different database platforms.  
+
+This package has core contracts and infrastructure designed to translate OData queries into database-specific queries for multiple database systems. 
+</Description>
+    <PackageReadmeFile>ReadMe.md</PackageReadmeFile>
+    <PackageTags>OData, Azure, Cosmos, My Sql, Ms SQL, Postgress, MongoDb</PackageTags>
+    <AnalysisLevel>latest-recommended</AnalysisLevel>
+    <IncludeSymbols>True</IncludeSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Cosmos\**" />
+    <EmbeddedResource Remove="Cosmos\**" />
+    <None Remove="Cosmos\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ReadMe.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
