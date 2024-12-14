@@ -11,7 +11,7 @@ This package has core contracts and infrastructure designed to translate OData q
 - Parse OData queries
 - Convert OData queries to SQL-like queries
 - Supports multiple database systems:  
-  - Azure Cosmos DB - Completed
+  - [Azure Cosmos DB - Completed](https://www.nuget.org/packages/Sreeni.OData.Transpiler.Azure.Cosmos)
   - MS SQL(Open)
   - MySQL(Open)
   - PostgreSQL(Open)
@@ -55,12 +55,12 @@ This package primarily required to build your own OData transpiler for a specifi
    ```
 4. The library uses the visitor pattern to handle different parts of the OData query. The following visitors are required for each database query translator:
 
-- `SelectVisitor`: Handles the `$select` option
-- `FilterVisitor`: Handles the `$filter` option
-- `OrderByVisitor`: Handles the `$orderby` option
-- `TopVisitor`: Handles the `$top` option
-- `SkipVisitor`: Handles the `$skip` option
-- `ExpandVisitor`: Handles the `$expand` option
+- `SelectVisitor`: Requires to handle the `$select` option
+- `FilterVisitor`: Requires to handle the `$filter` option
+- `OrderByVisitor`: Requires to handle the `$orderby` option
+- `TopVisitor`: Requires to handle the `$top` option
+- `SkipVisitor`: Requires to handle the `$skip` option
+- `ExpandVisitor`: Requires to handle the `$expand` option
 5. Implement the visitor classes for each OData query option like `$select`, `$filter`, `$orderby`, `$top`, `$skip`, and `$expand`.
    - Use the visitor classes to translate the OData query to the database-specific query.
 6. Create a database specific client to execute the translated query.
@@ -90,6 +90,9 @@ This package primarily required to build your own OData transpiler for a specifi
 		}
 	}
 	```
+## Implemented Translators
+- Azure Cosmos DB and find the package from [here](https://www.nuget.org/packages/Sreeni.OData.Transpiler.Azure.Cosmos).
+
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request on GitHub.
