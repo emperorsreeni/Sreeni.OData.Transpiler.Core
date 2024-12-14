@@ -18,7 +18,7 @@ This package has core contracts and infrastructure designed to translate OData q
     <PackageTags>OData, Azure, Cosmos, My Sql, Ms SQL, Postgress, MongoDb</PackageTags>
     <AnalysisLevel>latest-recommended</AnalysisLevel>
     <PackageProjectUrl>https://github.com/emperorsreeni/Sreeni.OData.Transpiler.Core</PackageProjectUrl>
-	  <Version>1.0.1</Version>
+	  <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
