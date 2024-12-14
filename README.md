@@ -1,8 +1,8 @@
 # Sreeni.OData.Transpiler.Core
 
-Sreeni.OData.Transpiler.Core is a .Net based OData transpiler that translates OData queries to downstream data source queries like MySQL, Postgres, MS SQL, Azure Cosmos, etc.
+Sreeni.OData.Transpiler is a .Net based OData transpiler that translates OData queries to downstream data source queries like MySQL, Postgres, MS SQL, Azure Cosmos, etc.
 
-The objective is to enable seamless integration and query translation across different database platforms.  
+The objective is to enable seamless integration and OData query translation across different database platforms.  
 
 This package has core contracts and infrastructure designed to translate OData queries into database-specific queries for multiple database systems. 
 
@@ -19,6 +19,7 @@ This package has core contracts and infrastructure designed to translate OData q
   - And more
 - Support for common OData query options: `$select`, `$filter`, `$orderby`, `$top`, `$skip`, and `$expand`
 - Nested fields in the select clause, filter expressions, and orderby expressions
+- It supports contains, between and in filter functions
 
 ## Getting Started
 ### Installation
