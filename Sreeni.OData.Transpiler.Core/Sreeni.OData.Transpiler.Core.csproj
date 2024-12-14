@@ -22,8 +22,8 @@ This package has core contracts and infrastructure designed to translate OData q
     <RepositoryUrl>https://github.com/emperorsreeni/Sreeni.OData.Transpiler.Core</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <ReadMe>ReadMe.md</ReadMe>
+    <PackageReadmeFile>ReadMe.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
