@@ -60,7 +60,7 @@ This package primarily required to build your own OData transpiler for a specifi
 - `$orderby` requires `OrderByVisitor`
 - `$top` requires `TopVisitor`
 - `$skip` requires `SkipVisitor`
-- `$expand` requires `ExpandVisitor
+- `$expand` requires `ExpandVisitor`
 5. Implement the visitor classes for each OData query option like `$select`, `$filter`, `$orderby`, `$top`, `$skip`, and `$expand`.
    - Use the visitor classes to translate the OData query to the database-specific query.
 6. Create a database specific client to execute the translated query.
