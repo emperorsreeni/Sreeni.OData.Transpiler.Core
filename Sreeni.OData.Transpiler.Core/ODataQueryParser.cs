@@ -32,6 +32,9 @@
                     case "$skip":
                         result.Skip = int.Parse(value);
                         break;
+                    case "$count":
+                        result.Count = bool.Parse(value);
+                        break;
                     case "$expand":
                         result.Expand = value.Split([','], StringSplitOptions.RemoveEmptyEntries).Select(s => s.Trim()).ToList();
                         break;

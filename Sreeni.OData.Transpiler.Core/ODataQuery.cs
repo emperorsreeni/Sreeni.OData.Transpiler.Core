@@ -8,6 +8,7 @@ namespace Sreeni.OData.Transpiler.Core
         public string Filter { get; set; }
         public List<string> OrderBy { get; set; }
         public int? Top { get; set; }
+        public bool? Count { get; set; }
         public int? Skip { get; set; }
         public List<string> Expand { get; set; }
 
