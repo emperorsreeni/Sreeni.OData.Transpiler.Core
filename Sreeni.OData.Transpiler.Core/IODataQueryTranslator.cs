@@ -2,6 +2,6 @@
 {
     public interface IODataQueryTranslator
     {
-        QueryResult Translate(string query);
+        QueryResult Translate(string query, bool includeCount=false);
     }
 }
